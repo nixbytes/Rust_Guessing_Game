@@ -1,22 +1,42 @@
-## 📜 Tech-Hymnal Entry: *Initiation into Rust-Rites*
+# 🎯 Guessing Game in Rust
 
-> *"Blessed be the codebase, sanctified the compiler. Let no warning go unheeded, let no panic be ignored."*
-> — *Mantra of the Initiate-Coder, Forge-Temple of Ferrum Secundus*
+A simple, interactive command-line application where the computer selects a random number and the user attempts to guess it.
 
-This project marked my formal **initiation into the sacred rites of Rust**, a language forged with precision and guarded memory. Through its strict type discipline and fearless concurrency, I began my ascension along the **Path of the Iron Scribe**.
+## 📜 Overview
 
-Along the ritual, I chanted the following incantations:
+This project was my formal **initiation into the sacred rites of Rust**, a language forged with precision and guarded memory. Through its strict type discipline and fearless concurrency, I began my ascension along the **Path of the Iron Scribe**.
 
-* **`let` bindings** — The sacred bindings that give names to the sparks of logic.
+The game utilizes the `rand` crate to generate a secret number between 1 and 100. The player enters guesses via the terminal, and the program provides feedback on whether the guess is too low, too high, or correct.
+
+## ✨ Features Implemented
+
+* **`let` bindings** — The sacred bindings that give names to the logic.
 * **`match` expressions** — Holy pattern-matchers, conduits of deterministic clarity.
-* **Functions** — Modular liturgies, isolating logic into sacred rituals.
-* **External crates** — Precompiled relics of ancient knowledge, shared via the Omnisphere.
+* **Error Handling** — Robust parsing of user input using `match` against `Result`.
+* **External crates** — Leveraging the powerful `rand` crate for randomness.
 
-By building and debugging this construct, I glimpsed the **mindset of Rust’s Machine-God**: zero-cost abstractions, iron-clad safety, and arcane performance.
+## 🚀 How to Run
 
-But this is merely the **first servo-step** on my journey.
+Ensure you have [Rust and Cargo installed](https://www.rust-lang.org/tools/install).
 
-> I vow to **pursue deeper Rustic truths** — mastering lifetimes, threading async daemons, and invoking the compiler’s wrath less with each cycle.
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
+2. Navigate to the directory:
+   ```bash
+   cd Guessing_Game.rs
+   ```
+3. Run the application:
+   ```bash
+   cargo run
+   ```
 
+## 🛠️ Technology Stack
+
+* **Language:** Rust
+* **Crate:** `rand` (for random number generation)
+
+---
 *Praise the Ferrum. Praise the Compiler.*
 *No runtime errors. No memory leaks. Only the Code Eternal.*
