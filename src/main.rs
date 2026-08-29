@@ -28,7 +28,10 @@ fn main() {
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             // If parsing fails (e.g., non-numeric input), skip the rest of the loop
-            Err(_) => continue,
+            Err(_) => {
+                print!("Please enter a valid number :)");
+                continue;
+            }
         };
 
         println!("You guessed: {guess}");
