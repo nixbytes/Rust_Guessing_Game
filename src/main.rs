@@ -2,11 +2,14 @@ use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 
+const MIN_RANGE: u32 = 1;
+const MAX_RANGE: u32 = 100;
+
 fn main() {
     println!("Pick a Number so I can guess");
 
-    // Generate a random number between 1 and 100 (inclusive)
-    let secret_number = rand::thread_rng().gen_range(1..=100);
+    // Generate a random number between 1 and 100 (inclusive) but now using MAX and MIN const to ensure exact
+    let secret_number = rand::thread_rng().gen_range(MIN_RANGE..=MAX_RANGE);
 
     // For debugging purposes: reveal the secret number
     // println!("The secret number is:{secret_number}");
