@@ -20,6 +20,7 @@ fn main() {
         let mut guess = String::new();
 
         // Read input from the standard input stream
+        guess.clear(); // Clear the old input but keep the memory buffer
         io::stdin()
             .read_line(&mut guess)
             .expect("Failed to read input");
