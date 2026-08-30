@@ -2,6 +2,7 @@ use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
 
+// Define the range for the guessing game
 const MIN_RANGE: u32 = 1;
 const MAX_RANGE: u32 = 100;
 
@@ -37,12 +38,13 @@ fn main() {
 
         println!("You guessed: {guess}");
 
-        // Compare the user's guess with the secret number
+        // Comparison of user's guess and the secret number to determine the next action.
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small"),
             Ordering::Greater => println!("Too big"),
             Ordering::Equal => {
                 println!("You Win!!! :)");
+                // Break out of the loop since the user has guessed correctly
                 break;
             }
         }
